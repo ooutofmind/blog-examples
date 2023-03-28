@@ -1,0 +1,8 @@
+spring:
+  web:
+    resources:
+      static-locations: classpath:/static/
+app:
+  ui-service:
+    uri: https://mockbin.org
+    index: /bin/44a52241-abd2-4135-be87-639d2f8e418c
