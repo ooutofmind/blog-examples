@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <script nonce=${random_nonce} src="https://unpkg.com/spacetime"></script>
+</head>
+<body>
+<h1>Welcome to our website!</h1>
+<p>This is a simple welcome page with an inline script allowed by the CSP.</p>
+<p>Your current timezone is: <span id="timezone-value"></span></p>
+<script nonce=${random_nonce}>
+  document.getElementById('timezone-value').innerText = spacetime.now().tz;
+</script>
+</body>
+</html>

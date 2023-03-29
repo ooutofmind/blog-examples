@@ -12,7 +12,7 @@ import org.springframework.http.HttpMethod;
 @Configuration
 public class RouteConfiguration {
 
-  RewriteFunction<String, String> nonceRewriteFunction = new NonceRewriteFunction();
+  private final RewriteFunction<String, String> nonceRewriteFunction = new NonceRewriteFunction();
 
   @Bean
     public RouteLocator routes(RouteLocatorBuilder builder,
